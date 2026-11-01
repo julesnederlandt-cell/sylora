@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#242321" />
+  <title>SYLORA Desktop</title>
+  <link rel="stylesheet" href="/frontend/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">S</div><div><b>SYLORA</b><small>DESKTOP</small></div></div>
+      <div class="top-center">Your work. One intelligent space.</div>
+      <div class="top-right"><span class="saved-dot"></span><span id="saveState">Enregistré localement</span><button class="avatar">S</button></div>
+    </header>
+    <div class="menubar">
+      <button data-menu="file">Fichier</button><button data-menu="edit">Édition</button><button data-menu="view">Affichage</button><button data-menu="insert">Insertion</button><button data-menu="format">Format</button><button data-menu="tools">Outils</button><button data-menu="help">Aide</button>
+      <div id="menuPopup" class="menu-popup hidden"></div>
+    </div>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="side-caption">ESPACE DE TRAVAIL</div>
+        <button class="nav active" data-view="home"><span>⌂</span>Accueil</button>
+        <div class="side-caption spaced">APPLICATIONS</div>
+        <button class="nav" data-view="writer"><span>▤</span>Writer</button>
+        <button class="nav" data-view="calc"><span>▦</span>Calc</button>
+        <button class="nav" data-view="impress"><span>▣</span>Impress</button>
+        <div class="side-caption spaced">ORGANISATION</div>
+        <button class="nav" data-view="files"><span>▱</span>Mes documents</button>
+        <div class="sidebar-bottom"><div class="user-chip"><div class="avatar small">S</div><div><b>Espace personnel</b><small>Stockage sur cet appareil</small></div></div><small class="version">SYLORA 0.1.0 · PREVIEW DESKTOP</small></div>
+      </aside>
+      <main class="main" id="main"></main>
+    </div>
+    <footer class="statusbar"><span>Prêt</span><span>SYLORA Desktop Preview</span><span>Stockage local</span></footer>
+  </div>
+  <script type="module" src="/frontend/app.js"></script>
+</body>
+</html>
